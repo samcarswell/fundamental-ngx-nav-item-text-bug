@@ -1,0 +1,16 @@
+<fd-shellbar [sideNav]="true">
+  <button
+    fd-shellbar-side-nav
+    fd-button
+    fdType="transparent"
+    glyph="menu2"
+    style="width: 2.75rem"
+    (click)="condensed = !condensed"
+  ></button>
+</fd-shellbar>
+<fd-vertical-navigation [condensed]="condensed">
+  <li fd-list-navigation-item>
+    <fd-icon glyph="home"></fd-icon>
+    <span fd-list-navigation-item-text> Overview </span>
+  </li>
+</fd-vertical-navigation>
